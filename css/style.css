@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Maven+Pro&subset=latin-ext');
+
+/* GENERAL */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1020px;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+h2 {  
+    font-size: 30px;
+    line-height: 5px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    color: #20816d;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+/* NAV */
+nav {
+    position: relative;
+    background: #323232;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 67px;
+    margin: auto;
+    transform: translateX(20.5%);
+    width: 80px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 30px solid #323232;
+}
+
+nav ul {
+    max-width: 700px;
+    margin: auto;
+}
+
+nav ul li a {
+    color: #fff;
+    transition: 0.3s;
+    line-height: 57px;
+}
+
+nav ul a:hover {
+    color: #2eb398;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background: transparent;
+}
+
+.nav>li>a {
+    padding: 10px 10px 0;
+}
+
+/* GALLERY */
+.gallery .container {
+    padding: 100px 0 80px;
+}
+
+.hexagon {
+    display: inline-block;
+    width: 230px;
+    height: 190px;
+    transform: rotate(90deg);
+    overflow: hidden;
+    visibility: hidden;
+    margin-left: -30px;
+}
+
+.hexagon-inside-1 {
+    height: 100%;
+    transform: rotate(60deg);
+    overflow: hidden;
+}
+
+
+.hexagon-inside-2 {
+    height: 100%;
+    transform: rotate(-120deg);
+    visibility: visible;
+    overflow: hidden;
+}
+
+.hexagon-img {
+    transform: rotate(-30deg);   
+}
+
+.gallery .hexagon-img:hover {
+    animation: hex-img 0.8s;
+}
+
+@keyframes hex-img {
+    0% {transform: scale(1) rotate(-30deg);}
+    25% {transform: scale(0.6) rotate(60deg);}
+    50% {transform: scale(0.9) rotate(150deg);}
+    75% {transform: scale(0.6) rotate(240deg);}
+}
+
+.gallery .row {
+    transform: translateX(4.3%);
+}
+
+.gallery .row:nth-of-type(2n+2) .hexagon {
+    position: relative;
+    top: -25px;
+}
+
+.gallery .row:nth-of-type(2n+3) {
+    margin-top: -50px;
+}
+
+/* ABOUT */
+
+.about {
+    background: #2eb398;
+    color: #d7fcf5;
+    padding: 30px 0;
+}
+
+.about .container {
+    max-width: 820px;
+    padding: 30px 10px 10px;
+    position: relative;
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+}
+
+.about .hexagon {
+    margin-left: -10px;
+
+}
+
+.about .row > [class*="col-sm"]:nth-of-type(2) {
+    margin-top: -30px;
+    padding-left: 30px;  
+}
+
+.about p {
+    font-size: 12px;
+}
+
+.icons {
+    margin-top: 35px;
+}
+
+.about a {
+    margin-left: -4px;
+}
+
+.about .fa {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.fa-facebook {
+    background: #2a5a98;
+}
+
+.fa-twitter {
+    background: #00a7da;
+}
+
+.fa-google-plus {
+    background: #e04d46;
+}
+
+.fa-pinterest {
+    background: #d00b1e;
+}
+
+.fa-linkedin {
+    background: #006794;
+}
+
+.fa-dribbble {
+    background: #ee528c;
+}
+
+/* CONTACT */
+
+.contact {
+    background: #323232;
+    padding: 10px 0;
+    color: #e0e0e0;
+}
+
+.contact .borders {
+    max-width: 1000px;
+    padding: 40px 0;
+    margin: 0 auto;
+    border-top: 1px solid #2b2b2b;
+    border-bottom: 1px solid #2b2b2b;
+}
+
+.contact .container {
+    max-width: 820px;
+}
+
+.contact h3 {
+    color: #bebebe;
+}
+
+.contact .form-control, .contact button {
+    border-radius: 0;
+}
+
+.contact input {
+    height: 38px;
+}
+
+.contact .form-control {
+    background: #454545;
+    border-color: #454545;
+    font-size: 12px;
+}
+
+.contact .btn {
+    width: 90px;
+    height: 37px;
+    background-color: #2eb398;
+    border-color: #2eb398;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.contact p {
+    font-size: 12px;
+}
+
+.contact p:nth-of-type(2) {
+    margin-top: 40px;
+}
+
+.contact p .fa {
+    width: 20px;
+    color: #2eb398;
+}
+
+/* FOOTER */
+footer {
+    background: #222222;
+}
+
+footer .container {
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+footer p {
+    color: #454545;
+    font-family: 'Maven Pro', sans-serif;
+    line-height: 45px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 970px) {
+    .about {
+        padding: 15px 0;
+    }
+
+    .about .row > [class*="col-sm"]:nth-of-type(2) {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .gallery .row .hexagon {
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    nav ul li:nth-of-type(3) {
+        display: none;
+    }
+    
+     .about .hexagon {
+        margin-left: 0;
+    }
+
+    .about .row > [class*="col-sm"]:nth-of-type(2) {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
